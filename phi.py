@@ -51,9 +51,7 @@ def print_status(first, second, counter, difference):
     print("[COMPLETE @ {}] Ratio = Phi (to 49 decimal places) after {} steps".format(
         timestamp, str(counter)))
 
-first = big_random_number()
-second = big_random_number()
-last_fib = find_phi_equivalence(first, second)
+last_fib = None
 while 0 < 1:
     if last_fib is not None:    
         last_fib = find_phi_equivalence(last_fib[0], last_fib[1])
