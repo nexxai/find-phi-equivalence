@@ -45,9 +45,11 @@ def big_random_number():
 def print_status(first, second, counter, difference):
     timestamp = datetime.datetime.fromtimestamp(
         time.time()).strftime('%Y-%m-%d %H:%M:%S')
-    print("[COMPLETE] STARTING VALUES: {} & {}".format(str(first), str(second)))
-    print("[{}] Ratio = Phi (to 49 decimal places) after {} steps".format(timestamp, str(counter)))
-    print("[VAL] Difference: {}".format(Decimal(difference)))
+    print("[VALUE 1] {}".format(str(first)))
+    print("[VALUE 2] {}".format(str(first)))
+    print("[DIFFERENCE] {}".format(Decimal(difference)))
+    print("[COMPLETE @ {}] Ratio = Phi (to 49 decimal places) after {} steps".format(
+        timestamp, str(counter)))
 
 first = big_random_number()
 second = big_random_number()
