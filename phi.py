@@ -35,7 +35,7 @@ def find_phi_equivalence(first, second):
     if base_number % 250 == 0:
         print_status(first, second, counter, Decimal(difference))
 
-    base_number = big_random_number()
+    base_number = base_number + 1
 
 def big_random_number():
     n = 10000
